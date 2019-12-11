@@ -5,7 +5,7 @@
   + Python 3.6 or 3.7
   + Pip
   + Anaconda 3.7 (recommended)
-  + PubNub
+  + redis
 
 ## Installation
 
@@ -22,14 +22,14 @@ conda create -n twitter-insights-env
 conda activate twitter-insights-env
 ```
 
-Inside the virtual environment, install package dependencies, including Flask:
+Inside the virtual environment, install package dependency: redis
 
 ```sh
-pip install 'pubnub>=4.1.6'
+pip install redis
 ```
 
 ## Usage
 
 ```sh
-python ingest.py
+python ingest.py -s <Redis DB hostname> -p <Redis DB port> [-w <Redis DB passowrd (if needed)>]
 ```
