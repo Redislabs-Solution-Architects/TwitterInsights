@@ -1,7 +1,10 @@
 runtime: python
-#vm: true
 env: flex
-entrypoint: python ingest.py -s <host name of Redis DB> -p <port>
+entrypoint: python ingest.py -s <Redis DB hostname> -p <Redis DB port> [-w <Redis DB passowrd (if needed)>]
 
 runtime_config:
   python_version: 3
+
+instance_class: B2
+manual_scaling:
+  instances: 1
