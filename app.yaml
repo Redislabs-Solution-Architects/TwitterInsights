@@ -1,7 +1,6 @@
 runtime: python
 env: flex
-# entrypoint: python ingest.py -s <Redis DB hostname> -p <Redis DB port> [-w <Redis DB passowrd (if needed)>]
-entrypoint: python redis-ingest.py -s redis-12428.c6729.us-central1-mz.gcp.cloud.rlrcp.com -p 12428 -w JmeSmzCKrxiCc8T
+entrypoint: python ingest.py -s <Redis DB hostname> -p <Redis DB port> [-w <Redis DB passowrd (if needed)>]
 
 runtime_config:
   python_version: 3

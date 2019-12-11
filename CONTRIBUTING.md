@@ -22,7 +22,7 @@ conda create -n twitter-insights-env
 conda activate twitter-insights-env
 ```
 
-Inside the virtual environment, install package dependency: redis
+Inside the virtual environment, install package dependencies: redis, requests
 
 ```sh
 pip install redis
