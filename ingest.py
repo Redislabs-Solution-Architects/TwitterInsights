@@ -37,11 +37,8 @@ except :
     print("GET twitter credentials from Redis failed")
     os._exit(2)
 
-#consumer_key = "D7Luf1JPcy3iOJoLoaswnvUo6" # Add your API key here
-#consumer_secret = "MDvXGP8DfYps8DIEHOWimYYpkMpfOrDhlb7TlDusnMg5pyKuZT" # Add your API secret key here
-
 stream_url = "https://api.twitter.com/labs/1/tweets/stream/sample?user.format=detailed"
-user_url = "https://api.twitter.com/1.1/users/show.json?user_id="
+#user_url = "https://api.twitter.com/1.1/users/show.json?user_id="
 
 # Gets a bearer token
 class BearerTokenAuth(AuthBase):
